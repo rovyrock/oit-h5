@@ -41,6 +41,7 @@
     "@tarojs/react": "3.1.1",
     "@tarojs/runtime": "3.1.1",
     "@tarojs/taro": "3.1.1",
+    "axios": "^0.21.1",
     "dayjs": "^1.10.4",
     "eventemitter3": "^4.0.7",
     "lodash": "^4.17.21",
