@@ -48,7 +48,7 @@
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "rmc-calendar": "^1.1.4",
-    "tea-component-mobile": "0.2.0",
+    "tea-component-mobile": "^0.2.1",
     "tslib": "^2.2.0"
   },
   "devDependencies": {

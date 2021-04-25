@@ -9870,10 +9870,10 @@ tar@^6.0.2:
     mkdirp "^1.0.3"
     yallist "^4.0.0"
 
-tea-component-mobile@0.2.0:
-  version "0.2.0"
-  resolved "http://r.tnpm.oa.com/tea-component-mobile/-/tea-component-mobile-0.2.0.tgz#8ba9e71e221184e1690f3fd54e4bd1246699bf8c"
-  integrity sha512-cmQHtGNLg3VggSjg6CHBtmRPZfeqGvIXd2a19++4Towfw7vCKE8npaiGMw2MuzqI/Dyi8H1Xuu99pVnKAjM9xg==
+tea-component-mobile@^0.2.1:
+  version "0.2.1"
+  resolved "http://r.tnpm.oa.com/tea-component-mobile/-/tea-component-mobile-0.2.1.tgz#f882d7380f43fc4b30b59dbb9cfa160d60cfbe2c"
+  integrity sha512-cXcq+6qXsNwIhJy3PhfyhNHjj4tiLqzeN2EFWBZpD2YoKXzuPVfDZjhukk9nLhPMosBIAi09KWv5kwWhVwAmRg==
   dependencies:
     "@tarojs/components" "^3.0.18"
     classnames "^2.2.6"
