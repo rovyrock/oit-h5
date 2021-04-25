@@ -1,0 +1,39 @@
+// 组件库的token参数
+@import "~moit-style/assets/less/tea/_style/index.less";
+
+@navbarName: navbar;
+@navbar-title-text-size:@font-size-h2;
+
+@navbar-height: 44px;
+@navbar-background-color: @form-background-base;
+@navbar-cell-padding: 0 10px;
+
+.@{navbarName} {
+
+    display: flex;
+    width: 100%;
+    height: @navbar-height;
+    background-color: @navbar-background-color;
+
+    &-left{
+        display: flex;
+        align-items: center;
+        padding: @navbar-cell-padding;
+    }
+    &-center{
+        display: flex;
+        flex:1;
+        align-items: center;
+        overflow: hidden;
+    }
+    &-title {
+        font-size: @navbar-title-text-size;
+        .text-ellipsis()
+    }
+    &-right{
+        display: flex;
+        align-items: center;
+        padding: @navbar-cell-padding;
+    }
+}
+

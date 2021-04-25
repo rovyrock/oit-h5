@@ -1,0 +1,30 @@
+// 组件库的token参数
+@import "~moit-style/assets/less/tea/_style/index.less";
+.icons {
+  &-box {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    display: flex;
+    box-align: center;
+    align-items: center;
+    box-direction: row;
+    box-orient: horizontal;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &-single {
+    flex: 1;
+    min-width: 20px;
+    width: 0%;
+    flex: 0 0 20%;
+    text-align: center;
+    &:first-child {
+      margin-left: 0 !important;
+      margin-top: 0 !important;
+    }
+  }
+  &-desc {
+    font-size: @font-size-xs;
+  }
+}

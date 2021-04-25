@@ -1,0 +1,29 @@
+@import (reference) "../tea/_style/index.less";
+
+@actionSheetName: oitm-actionsheet;
+
+.@{actionSheetName} {
+    background-color: @color-white-0;
+    .tea-button{
+        border-radius: @border-radius-none;
+    }
+    taro-button-core+taro-button-core{
+        margin-top:0;
+    }
+    &__hd{
+
+    }
+    &__bd{
+
+    }
+    &__ft{
+        padding-top:@padding-xs;
+        background-color: @color-gray-0;
+        .tea-button{
+            border:none;
+            &::after{
+                display: none;
+            }
+        }
+    }
+}

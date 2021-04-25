@@ -1,0 +1,151 @@
+// @import "./assets/less/tea/tea.less";
+@import "./assets/less/pages/index.less";
+// @import "./assets/less/pages/table.less";
+// @import "./assets/less/pages/iconExample.less";
+// @import "./assets/less/oitm/index.less";
+@import (reference) "./assets/less/tea/_style/index.less";
+
+.page {
+  height: 100vh;
+  background: #f4f5f9;
+  padding: 16px 0;
+  font-size: 16px;
+  overflow-y: scroll;
+  box-sizing: border-box;
+
+  &>.header:first-child {
+    display: block;
+    margin: 16px;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  &>.header:not(:first-child) {
+    font-size: 14px;
+    display: block;
+    margin: 8px 16px;
+    color: #888888;
+  }
+
+  .section {
+    padding: 0 16px;
+    margin: 16px 0;
+
+    &>.header {
+      font-size: 14px;
+      display: block;
+      margin-bottom: 12px;
+      color: #888888;
+    }
+  }
+}
+
+.gp-filter {
+  background-color: @color-white-0;
+
+  &-hd {}
+
+  &-bd {}
+
+  &-ft {}
+
+  &-group {
+    &-title {
+      display: flex;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  .tea-checkbox-group.tea-checkbox-group--outline {
+    display: block;
+    .clearfix();
+
+    &>.tea-checkbox__wrap--outline {
+      display: inline;
+      float: left;
+      width: auto;
+    }
+  }
+
+  .tea-checkbox-group.tea-checkbox-group--outline>.tea-checkbox__wrap--outline {}
+}
+
+
+.gp{
+  &-page{
+    width:100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  &-game{
+      &-logo{
+          width:32px;
+          height:32px;
+          display: block;
+      }
+  }
+  &-table{
+    &-pi{
+      background-color: #1D2634;
+      .taro3table-thead{
+        background-color: transparent;
+      }
+      .taro3table-th{
+        text-align: left;
+        background-color: transparent;
+        color: #fff;
+        &:first-child{
+          justify-content: start;
+        }
+        &.fixed{
+          background-color: #1B2330;
+          color:#fff;
+        }
+      }
+      .taro3table-col{
+        background-color: transparent;
+        color: #fff;
+        &.fixed{
+          background-color: #1B2330;
+          color:#fff;
+        }
+      }
+      .taro3table-row{
+        background-color: transparent;
+        border-color: #151C26;
+        &:first-child{
+          border-top-width: 1px;
+        }
+      }
+
+    }
+    &-firstcell{
+      font-size: @font-size-xs;
+    }
+  }
+  &-card{
+    &-bd{
+      padding:0 10px;
+    }
+  }
+}
+
+.pipeline{
+  &-tag{
+    display: inline-flex;
+    // flex:1;
+    color: #fff;
+    padding:0 10px;
+    &-1{
+      background-color: #006CFD;
+    }
+    &-2{
+      background-color: #14A8AA;
+    }
+    &-3{
+      background-color: #FFB249;
+    }
+  }
+}

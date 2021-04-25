@@ -1,0 +1,90 @@
+@import "./var.less";
+
+.@{prefixName}-field {
+  display: flex;
+  width: 100%;
+  background-color: @field-background-color;
+  box-sizing: border-box;
+
+  &__textarea,
+  &__input {
+    display: block;
+    font-size: @field-text-size;
+    color: @field-text-color;
+    width: 100%;
+    align-items: center;
+
+    &.is-disabled {
+      color: @field-disabled-text-color;
+      background-color: @field-disabled-background-color;
+    }
+  }
+
+  &__textarea {
+    position: relative;
+    padding: @field-textarea-padding;
+
+    &-item {
+      display: block;
+      width: 100%;
+      height: auto;
+      min-height: @field-textarea-min-height;
+      max-height: @field-textarea-max-height;
+
+      // 适配 H5
+      .taro-textarea {
+        font-size: inherit;
+        font-family: Arial;
+        resize: none;
+        line-height: inherit;
+      }
+
+      &.size-auto {
+        min-height: 0;
+        max-height: none;
+      }
+
+      // &.is-count {
+      //   padding-bottom: 30px;
+      // }
+    }
+    &-counter {
+      text-align: right;
+      font-size: @field-counter-text-size;
+      color: @field-counter-number-text-color;
+    }
+    &-current {
+      color: @field-current-number-text-color;
+    }
+  }
+
+  &__input {
+    padding: @field-input-padding;
+
+    &-item {
+      display: block;
+      width: 100%;
+      min-height: @field-input-height - @field-input-padding*2;
+      height: @field-input-height - @field-input-padding*2;
+      line-height: inherit;
+      text-overflow: clip;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+
+  &__placeholder {
+    color: @field-placeholder-text-color;
+
+    &--invalid {
+      color: @field-invalid-text-color;
+    }
+  }
+
+  .weui-input::-webkit-input-placeholder {
+    color: @field-placeholder-text-color;
+  }
+  .taro-textarea::-webkit-input-placeholder {
+    color: @field-placeholder-text-color;
+  }
+}

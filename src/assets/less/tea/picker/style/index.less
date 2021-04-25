@@ -1,0 +1,81 @@
+@import "var";
+@import "../../_style/mixins/hairline.less";
+
+.@{prefixName}-picker {
+  display: flex;
+  background-color: #fff;
+  width: 100%;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    width: 100%;
+    font-size: @picker-item-text-size;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    position: relative;
+    &::after {
+      .single-border(@direction: bottom, @color: @picker-border-color);
+    }
+  }
+
+  &__cancel {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &__title {
+    flex: 1;
+    text-align: center;
+
+    .active {
+      color: #000;
+    }
+  }
+
+  &__confirm {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: @text-primary-color;
+    &.is-disabled {
+      color: #999;
+    }
+  }
+
+  &__body {
+    flex: 1;
+  }
+
+  &__body-inner {
+    height: 200px;
+    color: #000;
+  }
+
+  &__item-inner {
+    line-height: 34px;
+    text-align: center;
+    font-size: @picker-item-text-size;
+
+    &--active {
+      border-color: @picker-border-color;
+    }
+  }
+
+  &__start {
+    color: #bbb;
+    display: inline-block;
+  }
+
+  &__end {
+    color: #bbb;
+    display: inline-block;
+  }
+
+  .weui-picker__action {
+    font-size: 14px;
+    &:last-child {
+      color: @text-primary-color;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="arrow_list" transform="translate(24) rotate(90)">
+    <g id="arrow_list-2" data-name="arrow_list">
+      <rect id="Rectangle" width="24" height="24" fill="none"/>
+      <path id="Path" d="M0,0,6.3,6.3,0,12.6" transform="translate(8.7 5.7)" fill="currentColor" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+@import "./var.less";
+
+.@{prefixName}-card {
+  background-color: @card-background-color;
+
+  &__header,
+  &__body,
+  &__footer {
+    padding: @card-padding;
+  }
+
+  &__title {
+    .@{prefixName}-heading {
+      display: inline-block;
+    }
+    margin-bottom: @margin-md;
+  }
+
+  &__subtitle {
+    margin-left: 8px;
+  }
+
+  &__header:empty,
+  &__body:empty,
+  &__footer:empty {
+    display: none;
+  }
+}

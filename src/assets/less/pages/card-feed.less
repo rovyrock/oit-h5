@@ -1,0 +1,23 @@
+// 组件库的token参数
+@import "~moit-style/assets/less/tea/_style/index.less";
+
+@cardFeed: card-feed;
+
+.@{cardFeed} {
+    background-color: transparent;
+    .@{prefixName}-card{
+        background-color: transparent;
+        &__header{
+            padding: 0 0 @padding-xs;
+
+        }
+        &__body{
+            padding: 2.5*@padding-base @padding-sm @padding-sm;
+            background-color: @background-base-color;
+        }
+        &__title{
+            margin-bottom: 2.5*@margin-base;
+        }
+    }
+
+}

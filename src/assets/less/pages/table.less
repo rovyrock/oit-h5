@@ -1,0 +1,41 @@
+// 组件库的token参数
+@import "~moit-style/assets/less/tea/_style/index.less";
+
+@tableName: db-table;
+@navbar-title-text-size:@font-size-h2;
+
+@navbar-height: 44px;
+@navbar-background-color: @form-background-base;
+@navbar-cell-padding: 0 10px;
+
+.@{tableName} {
+    display: table;
+    width:100%;
+    &-cell{
+        display: table-cell;
+        text-align: left;
+        vertical-align: middle;
+        box-sizing: border-box;
+    }
+    &-cells{
+
+    }
+    &-row{
+        display: table-row;
+    vertical-align: middle;
+    border-color: inherit;
+
+    }
+    &-rows{
+        display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+    }
+    &-thead{
+
+    }
+    &-tbody{
+
+    }
+}
+

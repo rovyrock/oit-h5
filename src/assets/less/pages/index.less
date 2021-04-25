@@ -1,0 +1,102 @@
+// 组件库的token参数
+@import "~moit-style/assets/less/tea/_style/index.less";
+
+@import "./card-feed.less";
+@import "./navBar.less";
+@import "./table.less";
+@import "./iconExample.less";
+
+
+.page {
+  .demo-box {
+    width: 100%;
+    min-height: 40px;
+    background-color: #aacfff;
+  }
+
+
+  .demo-fixed .demo-box {
+    height: 500px;
+  }
+
+  // flex 布局
+
+  .box-row {
+    position: relative;
+    flex: 1;
+    color: #ffffff;
+    min-height: 10px;
+    margin-bottom: 0;
+    background: #aacfff;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .box,
+  .box-first,
+  .box-nested,
+  .box-large {
+    position: relative;
+    flex: 1;
+    color: #ffffff;
+    min-height: 10px;
+    margin-bottom: 0;
+    background: #aacfff;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .box-first {
+    font-size: 12px;
+    padding: 4px;
+    background: #559eff;
+    border-color: #aacfff;
+  }
+
+  .box-nested {
+    font-size: 12px;
+    padding: 4px;
+    background: @color-brand;
+    border-color: #aacfff;
+  }
+
+  .box-large {
+    height: 80px;
+  }
+
+  .box-container {
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  .code {
+    font-size: 10px;
+    color: #aacfff;
+    margin: 8px 0;
+  }
+
+  // level
+  .box-wrap {
+    padding: 5px 0;
+    box-sizing: border-box;
+  }
+
+  .bor {
+    border: 1px dotted rgb(167, 165, 165);
+    box-sizing: border-box;
+  }
+  .imageWrap,
+  .imageWrap img {
+    width: 124px;
+    height: 46px;
+  }
+  .demo {
+    height: 80px;
+  }
+}

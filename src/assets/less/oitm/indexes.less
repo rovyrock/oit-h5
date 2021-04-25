@@ -1,0 +1,70 @@
+
+@import (reference) "../tea/_style/index.less";
+
+@indexesName: oitm-indexes;
+
+.@{indexesName} {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+  
+    &__content {
+      width: 100%;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+  
+    &__menu {
+      position: fixed;
+      top: 50%;
+      right: 0;
+      overflow: hidden;
+      transform: translate3d(0, -50%, 0);
+      z-index: 2;
+    //   z-index: $zindex-indexes;
+    }
+  
+    &__menu-item {
+      padding: 2px @padding-base;
+      color: @color-brand;
+      font-size: @font-size-xxs;
+      line-height: 1;
+      text-align: center;
+      cursor: pointer;
+    }
+  
+    &__body {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+    }
+  
+    &__list {
+      width: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
+      .@{prefixName}-list{
+        .@{prefixName}-item{
+          padding-right: 36px;
+        }
+        .@{prefixName}-hairline--bottom::after{
+          display: none;
+        }
+      }
+      .@{prefixName}-checkbox-wrap{
+        justify-content: flex-end;
+      }
+    }
+  
+    &__list-title {
+      padding: @padding-base @padding-md;
+      width: 100%;
+      color: @color-gray-5;
+      font-size: @font-size-h5;
+      background-color: @color-gray-0;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+  }
+  

@@ -1,0 +1,27 @@
+
+@import (reference) "../tea/_style/index.less";
+
+@oitmtabs: oitm-tabs;
+.@{oitmtabs}{
+    &--withoutpanel{
+        .@{prefixName}-tabs{
+            &__bar:after{
+                display: none;
+            }
+            &__panel{
+                display: none;
+            }
+        }
+    }
+    &--withoutbar{
+        .@{prefixName}-tabs{
+            &__bar{
+                display: none;
+            }
+            &__panel{
+
+            }
+        }
+    }
+
+}

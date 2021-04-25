@@ -1,0 +1,107 @@
+@import (reference) "../tea/_style/index.less";
+
+@timelineName: oitm-timeline;
+@timeline-dot-size: @padding-xs;
+@timeline-tail-width:@padding-base /2;
+@timeline-tail-color: @color-brand;
+@timeline-dot-color: @color-brand;
+@timeline-title-font-size: @font-size-md;
+
+.@{timelineName} {
+  &-item {
+    position: relative;
+    padding: 0 0 @padding-sm;
+    /* elements */
+    &__content {
+      //   min-height: 56px;
+      text-align: left;
+      padding-left: @padding-md;
+
+      &--title {
+        font-size: @font-size-md;
+        color: @color-brand;
+      }
+
+      &--sub {
+        font-size: @font-size-sm;
+        color: @text-color;
+      }
+    }
+
+    &__dot,
+    &__icon {
+      position: absolute;
+      left: 0;
+      top: (@timeline-title-font-size* @line-height-default)/2 -
+        @timeline-dot-size / 2;
+      width: @timeline-dot-size;
+      height: @timeline-dot-size;
+      font-size: 0;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: @border-radius-circle;
+      background: @timeline-dot-color;
+      box-sizing: border-box;
+      z-index: 1;
+
+      .at-icon {
+        font-size: @timeline-dot-size;
+      }
+    }
+
+    &__dot {
+      &::after {
+        // display: none;
+        content: "";
+        display: inline-block;
+        box-sizing: border-box;
+        width: @timeline-dot-size;
+        height: @timeline-dot-size;
+        border: 1px solid transparent;
+        border-radius: @border-radius-circle;
+        border-color: transparent;
+      }
+
+      &.@{timelineName}-item__icon {
+        &::after {
+          border-color: transparent;
+        }
+      }
+    }
+
+    &__icon {
+      color: @border-color;
+    }
+
+    &__tail {
+      position: absolute;
+      top: @timeline-title-font-size* @line-height-default / 2 +
+        @timeline-title-font-size / 2;
+      //   bottom: -@timeline-dot-size / 2;
+      bottom: 0;
+      left: @timeline-dot-size / 2 - @timeline-tail-width / 2;
+      border-left: @timeline-tail-width solid @timeline-tail-color;
+    }
+  }
+}
+
+.@{timelineName} {
+  .@{timelineName}-item:last-child {
+    padding-bottom: 0;
+    .@{timelineName}-item__tail {
+      //   display: none;
+    }
+  }
+
+  &--pending {
+    .@{timelineName}-item:nth-last-child(2) {
+      .@{timelineName}-item__content {
+        min-height: 80px;
+      }
+
+      .@{timelineName}-item__tail {
+        border-left-style: dotted;
+      }
+    }
+  }
+}

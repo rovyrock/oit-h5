@@ -1,0 +1,60 @@
+@import (reference) "../tea/_style/index.less";
+
+@oitpopup: oitm-popup;
+
+
+.@{oitpopup} {
+    display: flex;
+    flex-direction: column;
+    max-height:80vh;
+    background-color: @color-white-0;
+    border-radius: @padding-base *4 @padding-base *4 0 0;
+    &__header{
+        display: flex;
+        align-items: center;
+        padding:0 @padding-md;
+    }
+    &__title{
+        flex:1;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        .@{prefixName}-tabs{
+            &__bar:after{
+                display: none;
+            }
+            &__panel{
+                display: none;
+            }
+        }
+    }
+    &__back{
+        width:24px;
+        height:24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: @icon-base-color;
+    }
+    &__close{
+        width:24px;
+        height:24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: @icon-base-color;
+    }
+    &__body{
+        flex:1;
+        // padding:0 @padding-md;
+        
+        .@{prefixName}-tabs__content{
+            padding:0;
+        }
+        
+    }
+    &__footer{
+
+    }
+
+}

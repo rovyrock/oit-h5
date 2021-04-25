@@ -1,0 +1,39 @@
+@import "../../assets/less/tea/_style/index.less";
+
+
+.index {
+  .logo {
+    text-align: center;
+    color: @color-brand;
+    background-color: #f2f2f2;
+    padding: @padding-md 0;
+    font-size: @font-size-h3;
+  }
+
+  .header {
+    padding: 16px;
+    font-size: 20px;
+    color: #444;
+    border-bottom: 1px solid #f2f2f2;
+    &::before {
+      content: "";
+      height: 24px;
+      margin-right: 12px;
+      position: relative;
+      border-left: 4px solid @color-brand;
+    }
+  }
+
+  .item {
+    padding: 16px;
+    margin: 0 16px;
+    font-size: 16px;
+    border-bottom: 1px solid #e5e5e5;
+    &::after {
+      content: ">";
+      color: #888;
+      position: relative;
+      float: right;
+    }
+  }
+}
