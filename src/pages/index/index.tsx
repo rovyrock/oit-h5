@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { View, Text } from '@tarojs/components'
+import { View } from '@tarojs/components'
 import { Card, Button, Typography, WhiteSpace, Radio } from "tea-component-mobile";
 import network from "@/utils/network";
-import { initTestEnv } from 'src/utils/utils';
+
 
 const useFetch = (url) => {
   const [data, setData] = useState(null);
