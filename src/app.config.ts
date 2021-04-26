@@ -48,6 +48,8 @@ export default {
     'pages/Layout/index',
     'pages/Layout/vertical/index',
     'pages/Layout/popup/index',
+
+    'pages/Mock/Feeds/index',
     
   ],
   window: {

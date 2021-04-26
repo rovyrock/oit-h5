@@ -1,0 +1,67 @@
+// 组件库的token参数
+@import "~moit-style/assets/less/tea/_style/index.less";
+.feeds{
+    background-color: @background-base-color;
+    border-radius: @margin-base;
+    overflow: hidden;
+    & + .feeds{
+        margin-top:@margin-md;
+    }
+    &__hd{
+        display: flex;
+        font-size:@font-size-xs;
+        padding:@padding-sm 0;
+    }
+    &__channel{
+        display: flex;
+        align-items: center;
+    }
+    &__comment-score{
+        display: flex;
+        align-items: center;
+        font-size: @icon-size-xs;
+        [class^="oitm-icon-"], [class*=" oitm-icon-"]{
+            color: @text-light-color;
+        }
+    }
+    &__username{
+        font-weight: @font-weight-bold;
+    }
+    &__ft{
+        padding-top: 0;
+        padding-bottom: @padding-md;
+        &:after{
+            display: none;
+        }
+    }
+    &__operation{
+        .@{prefixName}-button{
+            &:first-child{
+                justify-content: flex-start;
+            }
+            &:last-child{
+                justify-content: flex-end;
+            }
+        }
+        [class^="oitm-icon-"], [class*=" oitm-icon-"]{
+            margin-right: @margin-base;
+            font-size: @icon-size-sm;
+            color: @text-light-color;
+        }
+    }
+    &__bd{
+        .@{prefixName}-cell__header{
+            display: none;
+        }
+        .@{prefixName}-cell__body{
+            line-height: 22px;
+            padding-bottom:0;
+        }
+        .@{prefixName}-cell__description{
+            margin-bottom:0;
+        }
+    }
+    &__sentiment{
+        font-size: @icon-size-sm;
+    }
+}
